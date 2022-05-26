@@ -9,7 +9,7 @@ const charactersList = {
             mode: 'cors',
             cache: 'no-cache',
         };
-        fetch('http://hp-api.herokuapp.com/api/characters'+ url , fetchOptions)
+        fetch('https://hp-api.herokuapp.com/api/characters'+ url , fetchOptions)
             .then(
                 function (response) {
                     return response.json();
