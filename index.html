@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Poudlard Characters</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand mx-4" href="">Poudlard Characters</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" href="">Gryffindor</a>
+                <a class="nav-item nav-link" href="">Hufflepuff</a>
+                <a class="nav-item nav-link" href="">Ravenclaw</a>
+                <a class="nav-item nav-link" href="">Slytherin</a>
+                <a class="nav-item nav-link" href="">All</a>
+              </div>
+            </div>
+          </nav>
+
+    </header>
+    <main>
+        <div id="review" class="my-4 d-flex flex-wrap justify-content-center">
+          <div class="card my-5">
+            <div class="card-header">
+              Choose your house
+            </div>
+            <div class="card-body">
+              <a href="" class="btn btn-danger">Gryffindor</a>
+              <a href="" class="btn btn-warning">Hufflepuff</a>
+              <a href="" class="btn btn-primary">Ravenclaw</a>
+              <a href="" class="btn btn-success">Slytherin</a>
+            </div>
+          </div>
+  
+        </div>
+
+    <!-- Balise template contenant le code HTML à cloner pour créer un élément "review" -->
+    <template id="reviewTemplate">
+       <div class="card text-white m-4 cardCharachter" style="width: 18rem;">
+            <img class="card-img-top picture" src="#" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title name"></h5>
+            </div>
+            <ul class="list-group list-group-flush">
+            <li class="list-group-item birth"></li>
+              <li class="list-group-item">Actor : <span class="actor"></span> </li>
+            </ul>
+            <div class="card-body">
+                <p class="card-text">Characteristics</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Eyes : <span class="eye"></span></li>
+                <li class="list-group-item">Hair : <span class="hair"> </span></li>
+            </ul>
+            <div class="card-body">
+                <p class="card-text">Patronus</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item patronus"></li>
+            </ul>
+            <div class="card-body">
+                <p class="card-text">Wand</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Core :  <span class="core"></span></li>
+                <li class="list-group-item">Length : <span class="length"></span></li>
+                <li class="list-group-item">Wood : <span class="wood"></span></li>
+            </ul>
+        </div>
+    </template>
+
+    </main>
+
+    <!-- Notre script JS -->
+    <script src="js/houseList.js"></script>
+    <script src="js/charactersList.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
