@@ -5,5 +5,5 @@
 - Une API à été utilisée (https://hp-api.herokuapp.com/)
 - Le CSS a été réalisé avec Bootstrap
 
-## Liens : 
+## Lien : 
 https://piedagnellaura.github.io/poudlard-characters/
