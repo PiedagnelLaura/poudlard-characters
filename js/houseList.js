@@ -7,10 +7,12 @@ const houseList = {
         for (const navLink of navLinks) {
             navLink.addEventListener('click', houseList.handleClickHouse);
         }
-        const btnsElmt = document.querySelectorAll('#review .btn');
+        const btnsElmt = document.querySelectorAll('#home .btn');
         for (const btnElmt of btnsElmt) {
             btnElmt.addEventListener('click', houseList.handleClickHouse);
         }
+        const homeElmt = document.querySelector('.homebtn');
+        homeElmt.addEventListener('click', houseList.handleClickHome);
     },
     /**
      * 
@@ -21,6 +23,7 @@ const houseList = {
         let house =evt.target.textContent;
         const reviewElmt = document.querySelector('#review');
         reviewElmt.textContent = "";
+        document.querySelector('#home').classList.add('d-none');
         if (house === "All") {
             let url ="";
             charactersList.findCharacters(url);
@@ -30,4 +33,14 @@ const houseList = {
             charactersList.findCharacters(url);
         }
     },
+
+    /**
+     * 
+     * on ramene sur la page d'accueil quand on clique sur 'Poudlard Characters'
+     */
+    handleClickHome: function (evt) {
+        evt.preventDefault();
+        document.querySelector('#home').classList.remove('d-none');
+        document.querySelector('#review').textContent = "";
+    }
 };
